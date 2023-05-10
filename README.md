@@ -35,7 +35,7 @@ Then open the link http://localhost:3000/
 
 ## Usage
 
-![Challenge-19-Text-Editor](./assets/employee%20tracker%20screenshot.png)
+![Challenge-19-Text-Editor](./client/src/images/JATE%20text%20editor%20screenshot.png)
 
 The images file contains the screenshot of what the application looks like along with the icons used to create the webpage.The src folder contains the css used to style the page along with the js used to provide functionality to install the app and create the database. The src-sw.js file contains the code used to cache the assets.
 ## License
