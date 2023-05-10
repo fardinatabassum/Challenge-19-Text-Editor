@@ -1,4 +1,3 @@
-// const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
 const { warmStrategyCache } = require("workbox-recipes");
 const { CacheFirst, StaleWhileRevalidate } = require("workbox-strategies");
 const { registerRoute } = require("workbox-routing");
@@ -25,15 +24,7 @@ warmStrategyCache({
   strategy: pageCache,
 });
 
-// const matchCallback = ({ request }) => {
-//   console.log(request);
-//   return (
-//     // CSS
-//     request.destination === 'style' ||
-//     // JavaScript
-//     request.destination === 'script'
-//   );
-// };
+
 registerRoute(({ request }) => request.mode === "navigate", pageCache);
 // TODO: Implement asset caching
 registerRoute(
